@@ -8,7 +8,7 @@
 	"main": "dist/server.js",
 	"scripts": {
 		"watch": "npx tsc --watch",
-		"start": "npx cross-env DEBUG=startup node backend/dist/server.js",
+		"start": "node backend/dist/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
 	"dependencies": {
