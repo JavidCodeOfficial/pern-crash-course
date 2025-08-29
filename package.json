@@ -1,0 +1,32 @@
+{
+	"name": "react-pern-stack-tutorial",
+	"version": "1.0.0",
+	"description": "A Full-Stack tutorial for building a Product Store with PostgreSQL, ExpressJS, ReactJS and NodeJS Using Typesctipt",
+	"license": "ISC",
+	"author": "MTjavidi",
+	"type": "module",
+	"main": "dist/server.js",
+	"scripts": {
+		"watch": "npx tsc --watch",
+		"start": "npx cross-env DEBUG=startup node backend/dist/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+	},
+	"dependencies": {
+		"@arcjet/inspect": "^1.0.0-beta.10",
+		"@arcjet/node": "^1.0.0-beta.10",
+		"@neondatabase/serverless": "^1.0.1",
+		"@tailwindcss/vite": "^4.1.12",
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.1",
+		"express": "^5.1.0",
+		"helmet": "^8.1.0",
+		"morgan": "^1.10.1",
+		"tailwindcss": "^4.1.12"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.3",
+		"@types/morgan": "^1.9.10",
+		"nodemon": "^3.1.10"
+	}
+}
